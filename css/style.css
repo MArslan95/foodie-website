@@ -1,0 +1,463 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:action,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+a,
+a:hover {
+  text-decoration: none;
+  /* color: var(--secondary-color) !important; */
+}
+a:hover {
+  color: var(--primary-color) !important;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+/* Variable Defining */
+:root {
+  --primary-color: #a82c48;
+  --secondary-color: #43121d;
+  --third-color: #f98169;
+  --white-color: #fff;
+  --text-color: #555;
+  --text-grey: #999;
+  --black-color: #000;
+  --primary-font: "Poppins";
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--primary-font);
+  font-size: 100%;
+  font-weight: 400;
+}
+
+/* Custom scroll Bar */
+
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+::-webkit-scrollbar-track {
+  background: var(--white-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+/* Custom Css */
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+  line-height: 3rem;
+}
+h4 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+}
+h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+}
+p {
+  font-size: 1rem;
+  color: var(--black-color);
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 1px;
+}
+/* Button Styling */
+.main-btn {
+  display: inline-block;
+  padding: 0.625rem 1.875rem;
+  line-height: 1.5625rem;
+  background-color: var(--primary-color);
+  border: 0.1875rem solid var(--primary-color);
+  color: var(--white-color);
+  font-size: 0.93rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+  border-radius: 50px;
+}
+.white-btn {
+  padding: 0.625rem 1.875rem;
+  line-height: 25px;
+  background-color: var(--white-color);
+  border: 0.1875rem solid var(--white-color);
+  color: var(--text-color);
+  font-size: 0.93rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+  border-radius: 50px;
+}
+.main-btn:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+.white-btn:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.wrapper {
+  padding-top: 8.25rem;
+  padding-bottom: 8.25rem;
+}
+.text-content {
+  width: 70%;
+  margin: auto;
+}
+.counter-section h2,
+.testimonial-section h2,
+.book-food-text h2 {
+  color: var(--white-color);
+}
+/* Header Design */
+.navigation-wrap {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+}
+.navigation-wrap .nav-item {
+  padding: 0 0.625rem;
+  transition: all 200ms linear;
+}
+.navbar-toggler:focus {
+  outline: unset;
+  border: unset;
+  box-shadow: none;
+}
+.nav-link {
+  font-size: 0.93rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  letter-spacing: 1px;
+}
+.navigation-wrap .main-btn {
+  padding: 0.31rem 1.47rem;
+  box-shadow: none;
+  margin-left: 0.625rem;
+}
+.navbar-brand {
+  width: 4rem;
+  height: 4rem;
+  background: #a82c48;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  transition: 0.5s;
+  /* color: var(--white-color) !important; */
+}
+/* Chang navigation bar on scroll on */
+.scroll-on {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--white-color);
+  box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.09);
+  transition: all 0.15s ease-in-out 0s;
+}
+
+/* Top banner design */
+.top-banner {
+  width: 100%;
+  /* border: 5px solid red; */
+  background: url(/image/topbanner.jpg) no-repeat center fixed;
+  background-size: cover;
+  padding: 10rem 0 9.37rem;
+  height: auto;
+}
+.home-text {
+  color: var(--secondary-color);
+  font-size: 1rem;
+  font-weight: 400;
+}
+/* Counter Section */
+.counter-section {
+  background-color: var(--primary-color);
+  padding: 2.5rem 0;
+  align-items: center;
+}
+.counter-section p {
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+
+/* About Section Design  */
+.about-section {
+  background: var(--white-color);
+}
+.about-section .card,
+.about-section .card img {
+  border-radius: 0.625rem;
+  transition: 0.5s;
+}
+.about-section .card img:hover {
+  transform: scale(1.1);
+}
+
+.about-section .text-sec {
+  padding-left: 2rem;
+}
+/* Food Section */
+
+.food-type {
+  padding-top: 3.2rem;
+}
+.food-type ul li {
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 2rem;
+  position: relative;
+  margin-left: 2.5rem;
+}
+.food-type ul li::before {
+  position: absolute;
+  left: -2.1875rem;
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+}
+.story-section {
+  width: 100%;
+  height: 28.125rem;
+  background: url(/image/hero-bg.jpg) no-repeat center fixed;
+  background-size: cover;
+  padding-top: 5rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+.story-section h2 {
+  color: var(--primary-color);
+}
+/* Explore Food */
+
+.explore-food .card {
+  border: none;
+  background: transparent;
+  border-radius: 0.9375rem;
+}
+.explore-food .card img {
+  border-radius: 0.9375rem;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.explore-food .card img:hover {
+  transform: scale(1.1);
+}
+.explore-food .card span {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  border-bottom: 0.0625rem solid #eee;
+}
+.explore-food .card span del {
+  color: var(--text-grey);
+  margin-left: 0.5rem;
+}
+/* Testimonial Section */
+.testimonial-section {
+  background: var(--primary-color);
+}
+.testimonial-section .carousel-item {
+  margin-top: 3rem;
+  padding: 10rem 3.125rem;
+  background-color: var(--white-color);
+  border-radius: 0.9375rem;
+  text-align: center;
+}
+.testimonial-section .carousel-item .carousel-caption img {
+  max-width: 6rem;
+  border-radius: 50%;
+  padding: 0.3125rem;
+}
+.testimonial-section .carousel-item .carousel-caption p {
+  font-size: 1.3125rem;
+  line-height: 2.0625rem;
+  padding: 0 11% 0.625rem;
+}
+.testimonial-section .carousel-indicators {
+  bottom: -2.9125rem;
+}
+.testimonial-section .carousel-indicators button {
+  width: 15px;
+  height: 15px;
+  outline: none;
+  border-radius: 50%;
+  border: none;
+  margin-right: 1rem;
+  opacity: 0.2;
+}
+.testimonial-section .carousel-indicators button.active {
+  opacity: 1;
+}
+.carousel-control-prev .fa-arrow-left {
+  background: var(--primary-color);
+  width: 3rem;
+  height: 3rem;
+  margin-top: 5rem;
+  color: var(--white-color);
+  border-radius: 50%;
+  padding-top: 1rem;
+  font-size: 1rem;
+}
+.carousel-control-next .fa-arrow-right {
+  background: var(--primary-color);
+  width: 3rem;
+  height: 3rem;
+  margin-top: 5rem;
+  color: var(--white-color);
+  border-radius: 50%;
+  padding-top: 1rem;
+  font-size: 1rem;
+}
+
+/* FAQ section */
+.faq h4 span {
+  color: var(--primary-color);
+  font-size: 1.875rem;
+  margin-right: 0.312rem;
+}
+.book-food {
+  width: 100%;
+  background: url(/image/about-bg.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0 71.9125px;
+  padding: 4.735rem 0;
+}
+.book-food h2 {
+  color: var(--white-color);
+}
+
+/* Newsletter */
+.newsletter {
+  width: 80%;
+  margin: 0 auto;
+}
+.newsletter .form-control {
+  height: 3.225rem;
+  padding: 0 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  border: 0.1875rem solid var(--text-grey);
+  background: transparent;
+  color: var(--black-color);
+}
+.newsletter .form-control:hover,
+.newsletter .form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+/* footer */
+.footer {
+  background: var(--primary-color);
+  text-transform: capitalize;
+}
+
+.footer .footer-link {
+  font-size: 1.3rem;
+  color: var(--white-color);
+  padding: 0 1.875rem;
+}
+.footer .footer-link img {
+  width: 3.3rem;
+  height: 3.3rem;
+  border-radius: 50%;
+  background: var(--white-color);
+  transition: 0.5s;
+}
+.footer .footer-link img:hover {
+  transform: rotate(360deg);
+}
+.footer .footer-link:hover {
+  color: var(--secondary-color) !important;
+}
+.footer a i {
+  font-size: 2rem;
+  color: var(--white-color);
+  padding: 0 1.875rem;
+  transition: 0.5s;
+}
+.fa-facebook:hover {
+  color: #4267b2;
+  transform: scale(1.3);
+}
+.fa-youtube:hover {
+  color: #c4302b;
+  transform: scale(1.3);
+}
+.fa-linkedin:hover {
+  color: #0e76a8;
+  transform: scale(1.3);
+}
+.fa-skype:hover {
+  color: #00aff0;
+  transform: scale(1.3);
+}
+.fa-twitter:hover {
+  color: #00acee;
+  transform: scale(1.3);
+}
+.fa-instagram:hover {
+  color: rgb(131, 58, 180);
+  transform: scale(1.3);
+}

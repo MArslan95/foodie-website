@@ -1,0 +1,136 @@
+@media (max-width: 1024px) {
+  /* about section */
+}
+@media (max-width: 991px) {
+  /* custom Classes */
+  .text-content {
+    width: 100%;
+  }
+  /* navbar brand */
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+  .navigation-wrap {
+    text-align: center;
+    background-color: var(--white-color);
+  }
+  .navigation-wrap .nav-link {
+    line-height: 1.875rem;
+  }
+  /* Banner Design */
+  .top-banner {
+    padding: 9.375rem 0 9.375rem;
+  }
+  /* carousel Desing */
+  .testimonial-section .carousel-item .carousel-caption p {
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  /* nav bar */
+  .fa-stream {
+    margin-right: 0.5rem;
+  }
+  /* Custom css */
+  h1 {
+    font-size: 2.8rem;
+  }
+  h2 {
+    font-size: 2rem;
+    line-height: 2.0625rem;
+  }
+  /* top banner */
+  .top-banner {
+    padding: 10.875 0 9.375rem;
+  }
+  .top-banner {
+    width: 100%;
+    /* border: 5px solid red; */
+    background: url(/image/top-banner.jpg) no-repeat center;
+    background-size: cover;
+    /* padding: 10rem 0 9.37rem; */
+    height: auto;
+  }
+  /* Story section */
+  .story-section {
+    height: auto;
+    padding: 3rem 0;
+  }
+  /* about section */
+  .about-section .card,
+  .about-section .card img {
+    border-radius: 0.625rem;
+    transition: 0.5s;
+  }
+  .about-section .card img:hover {
+    transform: scale(1.1);
+  }
+  /*Carousel section */
+  .testimonial-section .carousel-item {
+    padding: 11rem 3.125rem;
+  }
+  .carousel-control-next {
+    display: none;
+  }
+  .carousel-control-prev {
+    display: none !important;
+  }
+  .explore-food {
+    margin-top: -3rem;
+  }
+  /* News Letter */
+  .newsletter {
+    width: 75%;
+  }
+  .newsletter .main-btn {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  /* Footer section */
+  .footer .footer-link,
+  .footer a i {
+    padding: 0 0.7rem;
+  }
+
+  .footer .footer-link:hover {
+    color: var(--secondary-color) !important;
+  }
+  .footer a i {
+    font-size: 1.3rem;
+    color: var(--white-color);
+    transition: 0.5s;
+  }
+  .fa-facebook:hover {
+    color: #4267b2;
+    transform: scale(1.3);
+  }
+  .fa-youtube:hover {
+    color: #c4302b;
+    transform: scale(1.3);
+  }
+  .fa-linkedin:hover {
+    color: #0e76a8;
+    transform: scale(1.3);
+  }
+  .fa-skype:hover {
+    color: #00aff0;
+    transform: scale(1.3);
+  }
+  .fa-twitter:hover {
+    color: #00acee;
+    transform: scale(1.3);
+  }
+  .fa-instagram:hover {
+    color: rgb(131, 58, 180);
+    transform: scale(1.3);
+  }
+}
+@media (max-width: 330px) {
+  /* Custom css */
+
+  /* top banner */
+  /* Carousel Design */
+  .testimonial-section .carousel-item {
+    padding: 13rem 3.125rem;
+  }
+}
