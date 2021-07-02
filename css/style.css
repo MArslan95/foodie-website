@@ -207,7 +207,7 @@ p {
 .top-banner {
   width: 100%;
   /* border: 5px solid red; */
-  background: url("/image/topbanner.jpg") no-repeat center fixed;
+  background: url("https://images.pexels.com/photos/1640770/pexels-photo-1640770.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=800") no-repeat center fixed;
   background-size: cover;
   padding: 10rem 0 9.37rem;
   height: auto;
@@ -271,7 +271,7 @@ p {
 .story-section {
   width: 100%;
   height: 28.125rem;
-  background: url("/image/hero-bg.jpg") no-repeat center fixed;
+  background: url("https://images.pexels.com/photos/684965/pexels-photo-684965.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") no-repeat center fixed;
   background-size: cover;
   padding-top: 5rem;
   align-items: center;
@@ -280,7 +280,7 @@ p {
   text-align: center;
 }
 .story-section h2 {
-  color: var(--primary-color);
+  color: var(--white-color);
 }
 /* Explore Food */
 
@@ -373,7 +373,7 @@ p {
 }
 .book-food {
   width: 100%;
-  background: url("/image/about-bg.jpg") no-repeat center;
+  background: url("https://images.pexels.com/photos/2673353/pexels-photo-2673353.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   background-position: 0 71.9125px;
